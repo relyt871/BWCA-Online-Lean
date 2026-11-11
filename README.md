@@ -5,12 +5,10 @@ paper.  It checks exact rational arithmetic used in the numerical parts of the
 tight analysis and provides Mathlib-backed definitions for the `U`, `D`, and
 `K` functions.
 
-This directory is a standalone Lean project.  A collaborator can copy or clone
-just the `lean/` directory and check it from that directory.
-
 Recommended first-time check:
 
 ```bash
+cd lean
 lake exe cache get
 lake build
 ```
