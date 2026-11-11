@@ -1,6 +1,6 @@
 # Lean certificates for ski rental
 
-This is a small Lean companion project for the ski-rental section of the
+This is a Lean companion project for Section 4 of the
 paper.  It checks exact rational arithmetic used in the numerical parts of the
 tight analysis and provides Mathlib-backed definitions for the `U`, `D`, and
 `K` functions.
@@ -19,7 +19,7 @@ bridge, and the general-`K` analysis.  Their imports cover the one-third,
 concavity, and shared analysis files.  Each entry file can also be checked
 separately with the commands listed in its subdirectory README.
 
-The first command downloads precompiled Mathlib artifacts.  If it is skipped,
+The command `lake exe cache get` downloads precompiled Mathlib artifacts.  If it is skipped,
 `lake build` will still work, but it may compile Mathlib dependencies from
 source and take much longer.
 
@@ -93,7 +93,7 @@ checks:
 * consequently `Upower + rho * Upower'` is nonnegative for
   `rho in [1/3,1]` and `xi,t in [0,1]`.
 
-For `lem:general-K`, the project now checks:
+For `lem:general-K`, the project checks:
 
 * the two finite denominator-cleared polynomial inequalities used to show that
   the four-term expression `F(rho, xi)` decreases in `xi`;
